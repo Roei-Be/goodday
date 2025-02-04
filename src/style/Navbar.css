@@ -1,0 +1,30 @@
+.nav {
+    background-color: #3ae443;
+    width: 100%;
+    background-image: url("../../assets/BG2.jpeg");
+    display: flex;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 22px;
+    flex-direction: row-reverse;
+    margin: auto;
+    padding: 10px 0;
+
+    /* cursor: url(../../assets/pizzamouse1.png), auto; */
+
+}
+
+.nav button {
+    border: none;
+    margin: 0;
+    padding: 5px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.nav button:hover {
+    padding: 50px;
+    font-size: 5px;
+}

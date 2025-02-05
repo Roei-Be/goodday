@@ -1,5 +1,6 @@
 * {
   cursor: url(https://makefrontendshitagain.party/_nuxt/img/cursor.fdb52fc.gif), auto;
+  box-sizing: border-box;
 }
 
 body {

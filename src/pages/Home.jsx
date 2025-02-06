@@ -1,5 +1,5 @@
 import '../style/Home.css';
-import { useContext, useState, } from 'react';
+import { useContext } from 'react';
 import { DBContext } from '../context/SheetParsing';
 
 const Home = () => {

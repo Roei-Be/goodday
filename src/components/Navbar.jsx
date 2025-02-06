@@ -3,16 +3,16 @@ import '../style/Navbar.css'
 const Navbar = ({ navigate }) => {
     return ( 
         <div className="nav">
-            <div className="divWrapper" >
-                <div onClick={() => navigate('/')}>ברכה שבועית</div>
-                <div onClick={() => navigate('/1')}>עומוסקופ</div>
-                <div onClick={() => navigate('/2')}>רכילות</div>
-                <div onClick={() => navigate('/4')}>אודות</div>
-                <div onClick={() => navigate('/')}>הרשמה לשירות</div>
-                <div onClick={() => navigate('/')}>מדור שירה וחיברון</div>
-                <div onClick={() => navigate('/')}>כוס תה</div>
-                <div onClick={() => navigate('/')}>מעקב השבוע</div>
-                <div onClick={() => navigate('/')}>פורום השבוע</div>
+            <div className="buttonWrapper" >
+                <div className='navlink' onClick={() => navigate('/')}>ברכה שבועית</div>
+                <div className='navlink' onClick={() => navigate('/homoscope')}>עומוסקופ</div>
+                <div className='navlink' onClick={() => navigate('/gossip')}>רכילות</div>
+                <div className='navlink' onClick={() => navigate('/about')}>אודות</div>
+                <div className='navlink' onClick={() => navigate('/register')}>הרשמה לשירות</div>
+                <div className='navlink' onClick={() => navigate('/singNshit')}>מדור שירה וחיברון</div>
+                <div className='navlink' onClick={() => navigate('/teacup')}>כוס תה</div>
+                <div className='navlink' onClick={() => navigate('/weekly')}>מעקב השבוע</div>
+                <div className='navlink' onClick={() => navigate('/forum')}>פורום השבוע</div>
             </div>
         </div>
     );

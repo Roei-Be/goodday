@@ -3,7 +3,12 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
-import { BrowserRouter, Routes, Route, NavLink, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Bad from './pages/404';
+import About from './pages/About';
+import Homoscope from './pages/Homoscope';
+import SingNShit from './pages/SingNShit';
+import Gossip from './pages/Gossip';
 
 function App() {
 
@@ -17,8 +22,11 @@ function App() {
       <Navbar navigate={navigate}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>אודות</div>} />
-        <Route path="/contact" element={<div>צור קשר</div>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/homoscope" element={<Homoscope/>} />
+        <Route path="/singNshit" element={<SingNShit/>} />
+        <Route path="/gossip" element={<Gossip/>} />
+        <Route path="/*" element={<Bad/>} />
       </Routes>
       <Footer className="Footer"/>
     </div>

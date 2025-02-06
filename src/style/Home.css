@@ -57,6 +57,7 @@
     z-index: 99999;
     position: absolute;
     left: 50%;
+    
     top: 50%;
     transform: translate(-50%, 0);
     width: 93.5%;
@@ -81,4 +82,20 @@
     border-radius: 10px;
     margin: auto;
     z-index: 9999999999999999999;
+}
+
+@media screen and (max-width: 768px) {
+    .landing {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .home .blessWrapper {
+        width: 75%;
+        font-size: 16px;
+    }
+    
+    .landing .scroll {
+        font-size: 24px;
+    }
 }

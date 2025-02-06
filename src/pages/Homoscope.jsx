@@ -8,14 +8,16 @@ const Homoscope = () => {
 
     return (
         <div className="homoscope">
-            {homoscope && homoscope.map((item, index) => {
-                return (
-                    <div key={index} className="homoscopeItem">
-                        <p>{item.horoscope}</p>
-                        <p>{item.content}</p>
-                    </div>
-                )
-            })}
+            <div className="homoscopeWrapper">
+                {homoscope && homoscope.map((item, index) => {
+                    return (
+                        <div key={index} className="homoscopeItem">
+                            <p className="homoscopeTitle">{item.horoscope}</p>
+                            {/* <p>{item.content}</p> */}
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     );
 }
